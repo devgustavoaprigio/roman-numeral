@@ -1,0 +1,78 @@
+--require spec_helper
+require_relative "../roman_numerals.rb"
+
+RSpec.describe Numeric, "#roman_numeral" do
+  context "#convert number into roman numeral" do
+    it "1.roman_numeral returns I" do
+      expect(1.roman_numeral).to eq "I"
+    end
+    it "5.roman_numeral returns I" do
+      expect(5.roman_numeral).to eq "V"
+    end
+    it "4.roman_numeral returns IV" do
+      expect(4.roman_numeral).to eq "IV" 
+    end
+    it "6.roman_numeral returns IV" do
+      expect(6.roman_numeral).to eq "VI"
+    end
+    it "7.roman_numeral returns VII" do
+      expect(7.roman_numeral).to eq "VII"
+    end
+    it "8.roman_numeral returns VII" do
+      expect(8.roman_numeral).to eq "VIII"
+    end
+    it "9.roman_numeral returns IX" do
+      expect(9.roman_numeral).to eq "IX"
+    end
+    it "10.roman_numeral returns IX" do
+      expect(10.roman_numeral).to eq "X"
+    end
+    it "13.roman_numeral returns XIII" do
+      expect(13.roman_numeral).to eq "XIII"
+    end
+    it "15.roman_numeral returns XV" do
+      expect(15.roman_numeral).to eq "XV"
+    end
+    it "18.roman_numeral returns XVIII" do
+      expect(18.roman_numeral).to eq "XVIII"
+    end
+    it "19.roman_numeral returns XIX" do
+      expect(19.roman_numeral).to eq "XIX"
+    end
+    it "30.roman_numeral returns XXX" do
+      expect(30.roman_numeral).to eq "XXX"
+    end
+    it "50.roman_numeral returns L" do
+      expect(50.roman_numeral).to eq "L"
+    end
+    it "51.roman_numeral returns LI" do
+      expect(51.roman_numeral).to eq "LI"
+    end
+    it "89.roman_numeral returns LXXXIX" do
+      expect(89.roman_numeral).to eq "LXXXIX"
+    end
+    it "99.roman_numeral returns XCIX" do
+      expect(99.roman_numeral).to eq "XCIX"
+    end
+    it "145.roman_numeral returns CXLV" do
+      expect(145.roman_numeral).to eq "CXLV"
+    end
+    it "459.roman_numeral returns CDLIX" do
+      expect(459.roman_numeral).to eq "CDLIX"
+    end
+    it "1984.roman_numeral returns MCMLXXXIV" do
+      expect(1984.roman_numeral).to eq "MCMLXXXIV"
+    end
+    it "1545.roman_numeral returns MDXLV" do
+      expect(1545.roman_numeral).to eq "MDXLV"
+    end
+    it "4936.roman_numeral returns MMMMCMXXXVI" do
+      expect(4936.roman_numeral).to eq "MMMMCMXXXVI"
+    end
+  end
+end
+
+it "1984.roman_numeral returns MCMLXXXIV" do
+  expect(1984.roman_numeral).to eq "MCMLXXXIV"
+end
+
